@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grouping tags</title>
+  <style>
+    body{
+      background-color: #3c3b3d8e;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0%  ;
+    }
+    header{
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      
+    }
+    main{ /*conteéudo part 2 VERTICES arrendondados.*/
+      background-color: white;
+      font-size: 20px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    footer{
+      color: white;
+      background-color: black;
+      margin: 0%;
+      padding: 1px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    article{
+      background-color: #f8cf83;
+    }
+    article > aside{
+      background-color: rgb(245, 225, 166);
+    }
+
+    nav{
+      background-color: lightblue;
+      padding: 3px;
+      box-shadow: 1px 1px 3px rgb(27, 27, 27);
+    }
+    nav > a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+
+    nav > a:hover{
+      text-decoration:none;
+      background-color: rgb(57, 185, 158);
+    }
+
+    div#bola{
+      height: 100px;
+      width: 100px;
+      background-color: rgb(252, 157, 157);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <h1>Meus estudos com grouping tags</h1>
+      <nav>
+        <a href="#home">home</a>
+        <a href="#novidades">Novidades</a>
+        <a href="#quemsomos">quem somos</a>
+      </nav>
+</header>
+
+<main>
+  <section>
+    <article>
+      <h1>Noticias do dia</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, minima ullam, similique aliquid corporis quo facilis ipsam veritatis velit, culpa explicabo ad eius voluptatibus dolores nostrum! Placeat veniam voluptas debitis!</p>
+      <aside>
+        desenvolvido por Pedro Guimarães Rosa
+      </aside>
+    </article>
+  </section>
+  <article>
+    <h1>Noticias do dia</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, minima ullam, similique aliquid corporis quo facilis ipsam veritatis velit, culpa explicabo ad eius voluptatibus dolores nostrum! Placeat veniam voluptas debitis!</p>
+    <aside>
+      desenvolvido por Pedro Guimarães Rosa
+    </aside>
+  </article>
+  <div id="bola"></div>
+</main>
+
+<footer>
+  <p>Todos os direitos resevados para Pedro Guimarães Rosa</p>
+</footer>
+</body>
+</html>

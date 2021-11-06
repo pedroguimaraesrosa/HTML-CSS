@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        
+        /*  Seletores Personalizados.
+            #   =   ID
+            .   =   Class
+            :   =   Pseudo-Class
+            ::  =   Pseudo-element
+            >   =   Clildren
+        
+        */
+        
+        
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: black;
+            text-decoration: none;/* tira o sumblinhado do link*/
+            font-weight: bold;
+        }
+        
+        a:visited{ /* Quando é visitado*/
+            color: rgb(241, 129, 227);
+
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{ /* Quando você clica nele*/
+            color: rgb(226, 153, 43);
+        }
+        a::after{
+            content: "(link)";
+            text-decoration: none;
+            font-weight: normal;
+            color: coral;
+        }
+        a::before{
+            content: "👉";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/guimaraearosa/" target="_blank">instagram</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">youtube</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+    </ul>
+</body>
+</html>

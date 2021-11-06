@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar de maneira <a href="https://www.facebook.com/pedro.guimaraes.370/">muito facil meu facebook </a></p>
+    <p>você também pode <a href="https://www.instagram.com/byyourlive/">acessar meu instagram </a>aonde eu posto várias coisas legais</p>
+    <h2><abbr title="Quando você for acessar algum site externo, não irá fechar a sua pagina, o codigo a seguir é muito recomendado caso você queira dar uma atenção maior para seu site.">Aqui quando você clica no link, seu site permanece.</abbr></h2>
+<p>Você pode acessar de <a href="https://www.facebook.com/pedro.guimaraes.370/" target="_blank" rel="external">maneira simples meu facebook<a><p>
+<p>você pode <a href="https://www.instagram.com/byyourlive/" target="_blank" rel="external">acessar meu instagram</a> aonde eu posto várias coisas legais</p>
+<h2>Usando links Internos</h2>
+<p>Está é a primeira pagina do meu site, se você quiser, pode acessar a <a href="pag002.html" target="_self" rel="next">minha pagina</a> dessa maneira usando a tag rel="next" damos uma informação ao mecanismo de busca do google, que o link indicado é a proxima pagina</p>
+<p>você também pode acessar nossa terceira pagina de <a href="noticias/pag003.html">noticias</a></p>
+<ul  type="circle"><li>
+    <pre>
+        _blank vai abrir o link em uma nova janela em branco
+        _self vai abrir o link na janela ou frame atual (padrão)
+        _top vai desfazer todos os frames e abrir o destino no navegador completo
+        _parent similar ao uso do _top em uma referência à janela mãe 
+        nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir
+    </pre></li>
+</ul>
+<h1>Links para download</h1>
+<ul>
+    <li><a href="book/No More Mr. Nice Guy by Robert Glover.pdf" download="No More Mr. Nice Guy by Robert Glover" type="application/pdf">Baixar livro em pdf</a></li>
+    <li><a href="book/No More Mr. Nice Guy by Robert Glover.rar"download="No More Mr. Nice Guy by Robert Glover" type="application/zip">Baixar livro em formato zip</a></li>
+</ul>
+</body>
+</html>
