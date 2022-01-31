@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+
+        }
+        thead{
+            background-color: silver;
+        }
+        tfoot{
+            background-color: #e5ff00;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            width: 30px;
+            text-align: center;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1> Uso de Tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        Table
+             Thead
+                TR, TD, TH
+                  Tbody
+                    TR, TD, TH
+                       Tfoot
+                            TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Pais</th>
+                <th>População</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>China</td>
+                <td class="num">1 411 780 000</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>Índia</td>
+                <td class="num">1 380 004 385</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td class="num">331 449 281</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Indonésia</td>
+                <td class="num">273 523 615	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Paquistão</td>
+                <td class="num">220 892 340	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td class="num">213 317 639	</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>Nigéria</td>
+                <td class="num">206 139 589	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td class="num">164 689 383	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Rússia</td>
+                <td class="num">145 934 462	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td class="num">128 932 753	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td class="num">126 476 461	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Etiópia</td>
+                <td class="num">114 963 588	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Filipinas</td>
+                <td class="num">109 581 078	</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Egito</td>
+                <td class="num">102 334 404	</td>
+                <td>2020</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td><strong>128.624.563</strong></td>
+                <td>cento e vinte e oito milhões, seiscentas e vinte e quatro mil, quinhentos e sessenta e três.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
