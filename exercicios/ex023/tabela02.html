@@ -7,7 +7,7 @@
     <title>Tabelas</title>
     <style>
         table{
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
 
         }
@@ -19,12 +19,15 @@
         }
         td, th{
             border: 1px solid black;
-            padding: 10px;
-            width: 30px;
-            text-align: center;
-        }
+            padding: 10px;        }
         .num{
             text-align: right;
+        }
+        caption{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+            padding: 10px;
         }
     </style>
 </head>
@@ -43,12 +46,15 @@
     <table>
         <thead>
             <tr>
-                <th>Pais</th>
-                <th>População</th>
-                <th>Data</th>
+                <th scope="col" >Pais</th><!-- Col = coluna,usamos isso para identificar o dado, facilitando para os mecanismos de busca.-->
+                <th scope="col">População</th>
+                <th scope="col" style="width: 30px;">Data</th>
             </tr>
         </thead>
         <tbody>
+            <caption><abbr title="isso é um caption">Paises e suas populações</abbr></caption> <!--
+                essse aqui é o caption, ele sempre vai ficar no topo da tabela. Porque ele é a legenda!
+            -->
             <tr>
                 <td>China</td>
                 <td class="num">1 411 780 000</td>
@@ -122,7 +128,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!-- Row porque o dado de TOTAL DE HABITANTES Está na mesma linha, e não em uma coluna-->
                 <td><strong>128.624.563</strong></td>
                 <td>cento e vinte e oito milhões, seiscentas e vinte e quatro mil, quinhentos e sessenta e três.</td>
             </tr>

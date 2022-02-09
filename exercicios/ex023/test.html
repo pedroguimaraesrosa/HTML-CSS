@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        table, thead, tr, td,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Pais</th> <!-- Col = coluna,usamos isso para identificar o dado, facilitando para os mecanismos de busca.-->
+                <th scope="col">População</th>
+                <th scope="col">data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>orlanda</td>
+                <td>246521</td>
+                <td>11032021</td>
+            </tr>
+            <tr>
+                <td>Russian</td>
+                <td>214628</td>
+                <td>08011996</td>
+            </tr>
+        </tbody>
+        <tfoot>
+           <tr>
+            <th scope="row">total de hanitantes</th> <!-- o dado do th está na "LINHA" row-->
+            <th><strong>1208</strong></th>
+            <td>é nois</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
